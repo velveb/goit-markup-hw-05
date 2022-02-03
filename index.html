@@ -40,7 +40,7 @@
             <div class="overlay">
                 <div class="container">
                     <h1 class="hero-title">Эффективные решения<br /> для вашего бизнеса</h1>
-                    <button type="button" class="hero-button">Заказать услугу</button>
+                    <button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
                 </div>
             </div>
         </section>
@@ -92,20 +92,29 @@
                     <li class="lict-img">
                         <img src="./images/ebout-img1.jpg"
                             alt="програмист пишет код"
-                            width="370"
+                            width="370" height="294"
                             />
+                            <p class="pic-title">
+                            Десктопные приложения
+                            </p>
                     </li>
                     <li class="lict-img">
                         <img src="./images/ebout-img2.jpg"
                             alt="тестирование програмы на смартфоне" 
-                            width="370"
+                            width="370" height="294"
                             />
+                            <p class="pic-title">
+                                Мобильные приложения
+                            </p>
                     </li>
                     <li class="lict-img">
                         <img src="./images/ebout-img3.jpg"
                             alt="тестирование цфетов планшета"
-                            width="370"
+                            width="370" height="294"
                             />
+                            <p class="pic-title">
+                                Дизайнерские решения
+                            </p>
                     </li>
                 </ul>
             </div>
@@ -178,7 +187,7 @@
                                 </li>
                                 <li class="portrait-item">
                                     <a href="" class="portrait-link">
-                                        <svg class="portrait-icon" width="20" height="20">
+                                            <svg class="portrait-icon" width="20" height="20">
                                             <use href="./images/icons.svg#icon-facebook"></use>
                                         </svg>
                                     </a>
@@ -355,28 +364,28 @@
                 <ul class="portrait-list">
                     <li class="portrait-item">
                         <a href="" class="portrait-link footer-linknetwork">
-                            <svg class="portrait-icon footer-icon" widht="20" height="20">
+                            <svg class="portrait-icon footer-icon" width="20" height="20">
                                 <use href="./images/icons.svg#icon-instagram"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="portrait-item">
                         <a href="" class="portrait-link footer-linknetwork">
-                            <svg class="portrait-icon footer-icon" widht="20" height="20">
+                            <svg class="portrait-icon footer-icon" width="20" height="20">
                                 <use href="./images/icons.svg#icon-twitter"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="portrait-item">
                         <a href="" class="portrait-link footer-linknetwork">
-                            <svg class="portrait-icon footer-icon" widht="20" height="20">
+                            <svg class="portrait-icon footer-icon" width="20" height="20">
                                 <use href="./images/icons.svg#icon-facebook"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="portrait-item">
                         <a href="" class="portrait-link footer-linknetwork">
-                            <svg class="portrait-icon footer-icon" widht="20" height="20">
+                            <svg class="portrait-icon footer-icon"width="20" height="20">
                                 <use href="./images/icons.svg#icon-linkedin"></use>
                             </svg>
                         </a>
@@ -385,6 +394,20 @@
             </div>
         </div>
     </footer>
+
+    <!-- modal -->
+    
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="button-icon" data-modal-close>
+                <svg class="modal-button-icon" width="11" height="11">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>  

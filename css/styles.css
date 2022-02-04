@@ -111,12 +111,7 @@ div {
 .list-nav {
   display: flex;
 }
-.info {
-  display: flex;
-  list-style: none;
 
-  margin-left: auto;
-}
 /*відступи між пунктами меню */
 .list-item:not(:last-child) {
   margin-right: 50px;
@@ -124,7 +119,6 @@ div {
 
 .logo {
   display: inline-block;
-  /* padding: 24px 0 24px; */
   margin-right: 101px;
 
   color: var(--hover-color);
@@ -177,6 +171,18 @@ div {
   color: var(--hover-color);
 }
 
+.info {
+  display: flex;
+  list-style: none;
+
+  margin-left: auto;
+}
+
+.item-message:not(:last-child) {
+  margin-right: 30px;
+}
+
+
 .email,
 .tel {
   color: var(--auxiliary-text-color);
@@ -187,13 +193,10 @@ div {
   text-decoration: none;
 }
 
-.info {
-display: flex;
 
-}
+
 
 .email {
-  margin-right: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -618,10 +621,13 @@ fill: #2196F3;
 
  /* синій оверлей */
 
-
- .item-portfolio:hover .portfolio-text {
+.portfolio-link:hover .portfolio-text {
 transform: translateY(0);
- }
+}
+
+.portfolio-link:focus .portfolio-text {
+transform: translateY(0);
+}
 
 .link-popup {
   position: relative;
@@ -629,6 +635,7 @@ transform: translateY(0);
 }
 
 .portfolio-text {
+  display: block;
   position: absolute;
   top: 0;
   left: 0;
@@ -758,7 +765,7 @@ margin-left: 70px;
  background-color: rgba(0, 0, 0, 0.2);
  position: fixed;
  top: 0;
- transition: opacity 500ms, visibility 500ms;
+ transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1), visibility 500ms;
 }
 
 .is-hidden .modal {
